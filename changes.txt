@@ -1,0 +1,3 @@
+* See 060611 for pre-dated changes.
+
+1. Scripts allow for changes in MT offset frequencies and flip angles in any arbitrary set in any order

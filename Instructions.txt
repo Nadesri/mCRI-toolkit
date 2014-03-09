@@ -1,0 +1,19 @@
+qMT Post-Processing Instructions
+by Nade Sritanyaratana
+
+The following set of instructions will guide you to process data that follows Prof Block's and Dr. Kijowski's Knee qMT Protocol, as developed by N. Sritanyaratana, A. Samsonov, P. Mossahebi, S.A. Hurley, and K.M. Johnson.
+
+If you have found this .txt file, it means that you are now in the qMT directory of scripts to automate some of the processing. All the scripts in this directory are developed by me and you can reach me at nade@cae.wisc.edu with any questions or concerns. However, my scripts use many functions and protocol that are actually the products of other researchers in this lab. These researchers include (though probably not comprehensively): A. Samsonov, P.Mossahebi, S.A. Hurley, and K.M. Johnson. Please direct any questions you have accordingly, or if you are not sure then contact me first.
+
+The scripts in this directory are supposed to be structured in a way that each "major step" is put into a different script. There is a main script that will try to execute all of them in the most logical order, however if you only need to perform a subset of these steps then use each script individually.
+
+The general steps to follow are:
+	1. Go to your study directory that includes all the raw images for your given study. If you used the Knee qMT protocol, this will mean you have 1 AFI pfile (containing 2 sets of images for each TR), 4 SPGR pfiles (for alpha=4,10,20,&30), and 9 MT sequences (one MToff, and then 8 sets that performed 4 offsets at 2 different powers: 1+2*4=9). There should be a total of 14 pfiles.
+	2. If it hasn't been done so already, create a subdirectory named PFILES. Cut all of the pfiles and paste them here.
+	3. From the qMT Scripts directory, take qMT_Init_Template.m and copy it to your study directory. Rename the file to qMT_Init.m. Rename the pfile labels inside this script so they match. Also change any initialization variables to match your scanning parameters. (Note: the res structure does not have to be the original resolution matrix size. Instead, match it to whatever matrix size you would like the images resized to. This will be done in the qMT_imresize.m script.)
+	4. Run qMT_Init_Template.m. Ideally, this should now run the MainAS.m file on the qMT scripts directory. MainAS.m will then perform the reconstruction, coregistration, B1/T1/qMT fitting procedures, and then the qMT post-fit analysis.
+	5. If steps 3 or 4 fail, I most likely have a bug somewhere... Notify me and I will try to fix it, or if you can then please debug them yourself and let me know of any changes you made :) Please track any changes in changes.txt.
+
+Thanks, and happy post processing!
+Nade
+
