@@ -1,0 +1,7 @@
+# .mat data files
+*.mat
+
+# Autosave files
+*.m~
+
+oldscripts/
