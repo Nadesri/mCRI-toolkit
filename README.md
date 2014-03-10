@@ -19,4 +19,4 @@ This is a collection of tools for quantitative magnetization transfer imaging us
 
 A couple of these files are scripts. These were originally authored by Nade to automate the workflow for qMT image processing. Please refer to Instructions.txt to get some insights about how to run these scripts.
 
-In full disclosure, Pouria Mossahebi also collaborated with Alexey Samsonov and Sam Hurley to publish an open-source MATLAB package of quantative MRI functions. This package can be found here: http://medphysics.wisc.edu/~samsonov/qmap/
+Pouria Mossahebi also collaborated with Alexey Samsonov and Sam Hurley to publish an open-source MATLAB package of quantative MRI functions. This package can be found here: http://medphysics.wisc.edu/~samsonov/qmap/
